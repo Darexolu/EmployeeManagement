@@ -4,12 +4,17 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Employees List</h1>
 
 <p>
-    <a asp-action="Create">Add New Employee</a>
+    <a asp-action="Create" class="btn btn-primary">Add New Employee</a>
 </p>
-<table class="table">
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Employees List</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped">
     <thead>
         <tr>
             <th>
@@ -38,7 +43,15 @@
             </th>
             
          
-            <th></th>
+            <th>
+                Edit
+            </th>
+                    <th>
+                       View
+                    </th>
+                    <th>
+                       Delete
+                    </th>
         </tr>
     </thead>
     <tbody>
@@ -80,3 +93,5 @@
 }
     </tbody>
 </table>
+</div>
+</div>
